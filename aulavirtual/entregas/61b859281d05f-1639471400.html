@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+</head>
+<body>
+    <script>
+        // Crear una cookie: nombre; fecha de expiracion -UTC-; edad máxima en segundos; ruta; dominio
+
+        //document.cookie = "usuario = David Ramírez; expires = Thu, 16 Nov 2021 12:00:00 UTC; path=/;";
+        document.cookie = "usuario = David Ramírez;"; //esta cookie dura hasta que se cierra el ordenador
+        document.cookie = "sexo = hombre;";
+
+        //Leer una cookie:
+        let miCookie = document.cookie;
+        alert(miCookie);
+
+        //Modificar una cookie
+        document.cookie = "sexo = mujer;";
+
+        //Borrar una cookie
+        /*document.cookie = "usuario=; expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+        document.cookie = "sexo=; expires=Thu, 01 Jan 1970 00:00:01 GMT;";*/
+        alert(document.cookie);
+
+    </script>
+</body>
+</html>

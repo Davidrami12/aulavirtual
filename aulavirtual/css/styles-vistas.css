@@ -1,0 +1,426 @@
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+}
+
+  /*para ocultar la barra de scroll usar:*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  z-index: 10000;
+  transition: all 0.4s ease-in-out;
+  height: 100px;
+  background-color: #f4623a;  
+  text-align: center;
+  line-height: 40px;
+}
+
+.header.active {
+  background: #3A3837;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.5rem 3rem rgb(0 0 0 / 40%);
+}
+
+*{
+  font-family: "Quicksand";
+}
+
+#logo{
+  vertical-align: center;
+  width: 15%;
+}
+
+#logoFooter{
+  width: 3%;
+}
+
+#footer {
+  /*z-index: 0;*/
+  padding: 20px;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:10px; 
+}
+
+body{
+  background: url("../img/fondo.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;*/
+}
+
+#mainNav{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4623a;
+}
+
+@media(min-width: 992px) {
+  #funciones{
+    position:fixed;
+    left:125px;
+  }
+
+  #contenidoCentral{
+    position: relative;
+    left: 18%;
+  }
+
+  #calendario{
+    position: fixed;
+    right:125px;
+  }
+}
+
+
+@media(max-width:992px) and (min-width:768px){
+  #calendario { 
+    position: absolute;
+    top: 474px;
+  }
+}
+
+#infoFuture{
+  color: white;
+  font-size: xx-large;
+  font-family: "Lucida Console", "Courier New", monospace;;
+  transition: 0.3s;
+  font-weight: 900;
+}
+
+#infoFuture:hover{
+  text-shadow: 0 0 15px cornsilk;
+  font-size: 35px;
+}
+
+#cerrarSesion{
+  width: 10%;
+  font-size: larger;
+  color:white;
+  transition: 0.3s;
+}
+
+#curso{
+  text-align: center;
+  background-color: #F89276;
+}
+
+#entrega{
+  width: 100%;
+}
+
+#botonEntrega{
+  text-align:center; 
+  width:100%;
+}
+
+#entregaTarde{
+  color:red;
+}
+
+#cerrarSesion:hover{
+  color: black;
+}
+
+#tarjetaTarea{
+  text-align: justify;
+  padding:10px; 
+  background-color: white; 
+  border: 2px solid #F4623A; 
+  border-radius: 10px; 
+  box-shadow: 5px 10px #F4623A;
+  transition: 0.3s;
+}
+
+#tarjetaTarea:hover{
+  background-color: #e6e6e6;
+  
+}
+
+#tarjetaTema{
+  text-align: justify;
+  border: 1px solid #F4623A; 
+  box-shadow: 0 0.5rem 3rem rgb(0 0 0 / 40%);
+  transition: 0.3s;
+}
+
+#tarjetaTema:hover{
+  background-color: rgb(246, 200, 180);
+}
+
+#contenidoTema{
+  padding: 15px;
+}
+
+#tituloTema{
+  color: white;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  background-color: #F4623A;
+}
+
+#basura{
+  text-align: right;
+  color: black;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+#basura:hover{
+  color: lightgray;
+  text-decoration: none;
+}
+
+#asignatura{
+  color: #F4623A;
+}
+
+h1 { 
+  text-align: center; 
+  padding: 0.5em; 
+}
+
+
+
+
+
+#centrar{
+  text-align: center;
+}
+
+#centrar button{
+  margin-bottom: 12px;
+}
+
+#funcionPerfil:hover{
+  box-shadow: 0 0 35px cornsilk;
+}
+
+#tituloCalendario{
+  color:white;
+  text-align: center;
+}
+
+.calendario { 
+  font-family: "Quicksand", sans-serif;
+  font-size: 13px;
+  width: 100%;
+  /*height: 52rem;*/
+  /*background-color:#222227; */
+  text-align: center;
+  color:white !important;
+  text-shadow: 0 0.3rem 0.5rem rgb(0 0 0 / 50%);
+  box-shadow: 0 0.5rem 3rem rgb(0 0 0 / 40%);
+}
+
+#cabeza { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  text-shadow: 0 0.3rem 0.5rem rgb(0 0 0 / 50%);
+  height: 80px;
+  background-color: #F4623A;
+}
+
+.fa{
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+#diasc { 
+  text-align: center;
+  /*border: 1px solid gray; */
+  border-collapse: separate; 
+  border-spacing: 2px; 
+  background-color: #3a3837;
+}
+
+#diasc th,#diasc td { 
+  text-align: center;
+  font: normal 14pt; 
+  width: 70px;
+  height: 3rem;
+  /*background-color: #3a3837;*/
+}
+
+#diasc th { 
+  text-align: center;
+  color: #EEEBEE; 
+  /*background-color: #3a3837;*/
+}
+
+#diasc td { 
+  text-align: center;
+  color: #EEEBEE; 
+  border: 0.2rem solid #3a3837;
+  background-color: #222227;
+}
+
+#diasc td:hover{ 
+  text-align: center;
+  /*background-color: #1d1d1d;*/
+  border: 0.2rem solid #777;
+  cursor: pointer;
+}
+
+#retroalimentacionPositiva{
+  padding:10px; 
+  border-left-style: solid; 
+  border-left: 5px solid blue; 
+  background-color:lightblue;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  /*display: inline block;
+  border-style: groove;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #79e2c2;*/
+}
+
+#retroalimentacionNegativa{
+  padding:10px; 
+  border-left-style: solid; 
+  border-left: 5px solid red; 
+  background-color: rgb(253, 181, 173);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/*#fechaactual { 
+  font: bold 12pt; 
+  padding: 0.4em 
+}
+
+#fechaactual i { 
+  cursor: pointer ; 
+}*/
+
+form {
+    /* Just to center the form on the page */
+    margin: 0 auto;
+    /* To see the outline of the form */
+    padding: 1em;
+    border: 3px solid #CCC;
+    border-radius: 20px;
+    opacity: 0.9;
+  }
+  #contenido{
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 15px;
+  }
+  
+  form div + div {
+    margin-top: 2em;
+    
+  }
+  
+  label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 220px;
+    text-align: center;
+    
+  }
+  
+  input, textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+    /* Para que el texto no aparezca pegado a la caja*/
+    padding: .2em;
+    /* To give the same size to all text fields */
+    width: 300px;
+    box-sizing: border-box;
+    /* To harmonize the look & feel of text field border */
+    border: 1px solid #999;
+  }
+  /*
+  input:required, textarea:required {
+    border:1px solid red;
+}
+*/
+
+input:valid, textarea:valid {
+    border:1px solid green;
+}
+
+input:invalid, textarea:invalid {
+    border:1px solid red;
+}
+
+textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: middle;
+    
+    /* To give enough room to type some text */
+    height: 5em;
+  }
+  
+  #contenido{
+    /*width: 100%;*/
+    text-align: center;
+  }
+
+  #contenido .button{
+      text-align: center;
+  }
+
+#tabla td, #tabla th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+  
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+#tabla #nombre{
+  text-align: left;
+}
